@@ -15,7 +15,7 @@ GastroQR es una aplicación web para restaurantes que permite a los clientes ver
 
 
 ### Flujo de trabajo
-    1. Autenticación: Los usuarios (clientes y administradores)  deben autenticarse utilizando sus credenciales para recibir un token JWT.
+    1. Autenticación: los administradores deben autenticarse utilizando sus credenciales para recibir un token JWT.
 
     2. Gestión de Menús: Los administradores pueden crear, actualizar y eliminar menús. Los clientes pueden ver los menús disponibles.
 

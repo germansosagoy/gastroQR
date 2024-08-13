@@ -1,6 +1,6 @@
 const express = require("express");
 const http = require("http");
-const socketIo = require("socket.io");
+// const socketIo = require("socket.io");
 const dotenv = require("dotenv");
 const cors = require("cors");
 const connectDB = require("./config/db.js");
@@ -14,7 +14,7 @@ dotenv.config();
 
 const app = express();
 const server = http.createServer(app);
-const io = socketIo(server);
+// const io = socketIo(server);
 
 // conectar a MongoDB
 connectDB();
@@ -36,18 +36,18 @@ app.use("/api/auth", authRoutes);
 app.use("/api/admin", adminRoutes);
 
 // configuración socket.io
-io.on('connection', (socket) => {
-  console.log('Nuevo cliente conectado.');
+// io.on('connection', (socket) => {
+//   console.log('Nuevo cliente conectado.');
 
-  // escuchar eventos de creación de ordenes
-  socket.on('ordenCreada', (order) => {
-    io.emit('newOrder', order);
-  });
+//   // escuchar eventos de creación de ordenes
+//   socket.on('ordenCreada', (order) => {
+//     io.emit('newOrder', order);
+//   });
 
-  socket.on('disconnect', () => {
-    console.log('Cliente desconectado');
-  });
-});
+//   socket.on('disconnect', () => {
+//     console.log('Cliente desconectado');
+//   });
+// });
 
 app.get("/", (req, res) => {
   res.send("Bienvenido a GastroQR API");

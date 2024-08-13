@@ -23,6 +23,7 @@ const MenuItemSchema = new mongoose.Schema({
   imageUrl: {
     type: String,
   },
+  companyId: {type: mongoose.Schema.Types.ObjectId, ref: 'Company', required: true},
 });
 
 const MenuItem = mongoose.model('MenuItem', MenuItemSchema);

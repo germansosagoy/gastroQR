@@ -15,6 +15,8 @@ import {
   FaUsersCog,
   FaListAlt,
   FaCashRegister,
+  FaDollarSign,
+  FaTags,
 } from "react-icons/fa";
 
 // import user01 from "../assets/user01.png";
@@ -24,11 +26,6 @@ import {
 export const links = [
   {
     href: "#",
-    icon: FaChartBar,
-    text: "Panel de Control",
-  },
-  {
-    href: "#",
     icon: FaCalendarAlt,
     text: "Calendario",
     badge: {
@@ -36,6 +33,11 @@ export const links = [
       color: "bg-gray-100 text-gray-800",
       darkColor: "dark:bg-gray-700 dark:text-gray-300",
     },
+  },
+  {
+    href: "#",
+    icon: FaChartBar,
+    text: "Tareas",
   },
   {
     href: "#",
@@ -61,6 +63,21 @@ export const links = [
     href: "#",
     icon: FaCashRegister,
     text: "Órdenes",
+  },
+  {
+    href: "#",
+    icon: FaDollarSign,
+    text: "Ventas",
+  },
+  {
+    href: "#",
+    icon: FaTags,
+    text: "Productos",
+  },
+  {
+    href: "#",
+    icon: IoIosSettings,
+    text: "Configuración",
   },
   {
     href: "#",

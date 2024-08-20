@@ -33,7 +33,7 @@ const Sidebar: React.FC<SidebarProps> = ({sidebarOpen}) => {
         <h3 className="px-1 mb-2 text-gray-500 tracking-wider text-sm font-semibold">
             Menú Principal
         </h3>
-        <ul className="space-y-2 text-base text-sm font-semibold">
+        <ul className="space-y-2 text-base text-base font-semibold">
           {links.slice(2, 8).map((link, i) => (
             <LinksItem key={i} {...link} />
           ))}

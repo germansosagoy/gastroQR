@@ -11,7 +11,7 @@ import {
 import {
   FaChartBar,
   FaCalendarAlt,
-  FaFacebookMessenger,
+  FaBell,
   FaUsersCog,
   FaListAlt,
   FaCashRegister,
@@ -41,7 +41,7 @@ export const links = [
   },
   {
     href: "#",
-    icon: FaFacebookMessenger,
+    icon: FaBell,
     text: "Notificaciones",
     badge: {
       text: "4",

@@ -5,8 +5,9 @@ import { AuthProvider } from "./context/auth-context";
 import AdminLayout from "./components/Layout/admin-layout";
 import AdminDashboard from "./components/AdminDashboard";
 //auth routes
-import SignUp from "./auth/register/sign-up";
-// import SignIn from './auth/register/sign-in'
+import SignUp from "./pages/register/sign-up";
+import SignIn from "./pages/login/sign-in";
+
 
 function App() {
   const [darkMode, setdarkMode] = useState(false);
@@ -37,7 +38,8 @@ function App() {
             <Route path="" element={<AdminDashboard />} />
             {/* Otras rutas del dashboard pueden ir aquí */}
           </Route>
-          <Route path="/sign-up" element={<SignUp />}></Route>
+          <Route path="/sign-up" element={<SignUp />} />
+          <Route path="/sign-in" element={<SignIn />} />
         </Routes>
       </Router>
       </AuthProvider>
